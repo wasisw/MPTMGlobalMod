@@ -1784,7 +1784,7 @@ void GlobalOrderClosure()
             case OP_BUY :
                // close buy
                _priceClose=MarketInfo(OrderSymbol(),MODE_BID);
-               Print("Close on ",_i," position order with ticket น",_ticket);
+               Print("Close on ",_i," position order with ticket ยน",_ticket);
                order_close=OrderClose(_ticket,OrderLots(),_priceClose,10,Red);
                break;
             case OP_SELLLIMIT :
@@ -1794,12 +1794,12 @@ void GlobalOrderClosure()
             case OP_SELL :
                // close sell
                _priceClose=MarketInfo(OrderSymbol(),MODE_ASK);
-               Print("Close on ",_i," position order with ticket น",_ticket);
+               Print("Close on ",_i," position order with ticket ยน",_ticket);
                order_close=OrderClose(_ticket,OrderLots(),_priceClose,10,Red);
                break;
             default :
                // values from  1 to 5, deleting pending orders
-               //               if (PrintToJournal) Print("Delete on ",_i," position order with ticket น",_ticket);
+               //               if (PrintToJournal) Print("Delete on ",_i," position order with ticket ยน",_ticket);
                //               OrderDelete(_ticket);
                break;
            }    //# switch
